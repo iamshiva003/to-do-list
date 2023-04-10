@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&family=Fira+Sans&family=Roboto:wght@100;700&display=swap');
+
+body {
+	font-family: "Fira sans", Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #e3e0e0;
+    background: url("./images/4435961.jpg");
+    background-repeat: no-repeat;
+    background-size: 1600px;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	text-align: center;
+	margin: 0 0 20px;
+    font-size: 2.5rem;
+	font-weight: 300;
+}
+
+form {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+input[type="text"] {
+    background: none;
+	outline: none;
+	border: none;
+	appearance: none;
+	flex: 1 1 0%;
+	background-color: rgb(226, 223, 223);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin-right: 1rem;
+	color: #EEE;
+	font-size: 1.25rem;
+}
+
+button[type="submit"] {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+    margin-left: 10px;
+    font-size: large;
+}
+
+button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+.task {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.task:last-child {
+	border-bottom: none;
+}
+
+.task .content {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.task .text {
+	flex: 1;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+    color: #0f0707;
+}
+
+.task .text[readonly] {
+    color: #232323;
+	background-color: #eee;
+}
+
+.task .actions {
+	display: flex;
+	margin-left: 10px;
+}
+
+.task .actions button {
+	margin-left: 10px;
+	padding: 6px 12px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.task .actions button.edit {
+	background-color: #4CAF50;
+	color: #fff;
+}
+
+.task .actions button.edit:hover {
+	background-color: #3e8e41;
+}
+
+.task .actions button.delete {
+	background-color: #f44336;
+	color: #fff;
+}
+
+.task .actions button.delete:hover {
+	background-color: #d32f2f;
+}
+
+.task .done {
+	margin-right: 10px;
+	cursor: pointer;
+}
+.task.completed {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
